@@ -1,10 +1,13 @@
-public class Cafe extends Bebida {
-    public Cafe() {
-        descricao = "Café";
+public class Cafe implements Bebida {
+
+    @Override
+    public String getDescricao() {
+        return "Café";
     }
 
     @Override
-    public double preco() {
+    public double getPreco() {
         return 3.0;
     }
+
 }

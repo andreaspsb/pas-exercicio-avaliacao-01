@@ -1,9 +1,6 @@
-public abstract class Bebida {
-    protected String descricao = "Bebida desconhecida";
+public interface Bebida {
 
-    public String getDescricao() {
-        return descricao;
-    }
+    String getDescricao();
 
-    public abstract double preco();
+    double getPreco();
 }

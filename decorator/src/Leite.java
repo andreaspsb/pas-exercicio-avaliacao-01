@@ -1,8 +1,7 @@
 public class Leite extends AdicionalDecorator {
-    private Bebida bebida;
 
     public Leite(Bebida bebida) {
-        this.bebida = bebida;
+        super(bebida);
     }
 
     @Override
@@ -11,7 +10,7 @@ public class Leite extends AdicionalDecorator {
     }
 
     @Override
-    public double preco() {
-        return bebida.preco() + 1.0;
+    public double getPreco() {
+        return bebida.getPreco() + 1.0;
     }
 }

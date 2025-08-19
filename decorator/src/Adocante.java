@@ -1,8 +1,7 @@
 public class Adocante extends AdicionalDecorator {
-    private Bebida bebida;
 
     public Adocante(Bebida bebida) {
-        this.bebida = bebida;
+        super(bebida);
     }
 
     @Override
@@ -11,7 +10,7 @@ public class Adocante extends AdicionalDecorator {
     }
 
     @Override
-    public double preco() {
-        return bebida.preco() + 0.5;
+    public double getPreco() {
+        return bebida.getPreco() + 0.5;
     }
 }

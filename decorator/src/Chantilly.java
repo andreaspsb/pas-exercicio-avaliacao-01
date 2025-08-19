@@ -1,8 +1,7 @@
 public class Chantilly extends AdicionalDecorator {
-    private Bebida bebida;
 
     public Chantilly(Bebida bebida) {
-        this.bebida = bebida;
+        super(bebida);
     }
 
     @Override
@@ -11,7 +10,7 @@ public class Chantilly extends AdicionalDecorator {
     }
 
     @Override
-    public double preco() {
-        return bebida.preco() + 1.5;
+    public double getPreco() {
+        return bebida.getPreco() + 1.5;
     }
 }
